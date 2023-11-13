@@ -1,11 +1,15 @@
 <template>
-  <v-app>
-    <v-main>
-      <HelloWorld />
-    </v-main>
-  </v-app>
+	<div class="bg-brown-lighten-5 main-container">
+		<RouterView/>
+	</div>
 </template>
 
-<script setup lang="ts">
-  import HelloWorld from '@/components/HelloWorld.vue'
+<script setup>
+import {RouterView} from 'vue-router'
 </script>
+
+<style>
+.main-container {
+	min-height: 100vh;
+}
+</style>
